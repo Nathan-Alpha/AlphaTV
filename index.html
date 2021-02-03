@@ -8,6 +8,35 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
 	<script src="/js"></script>	
+</head>
+<body>
+<style>
+	ul {
+    height: 120px;
+    overflow-y: scroll;
+    font-size: 18px;
+}
+li.selected {
+    background: #ccc;
+}
+	</style>
+	<ul>
+    <li class="selected">Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+    <li>Element 4</li>
+    <li>Element 5</li>
+    <li>Element 6</li>
+    <li>Element 7</li>
+    <li>Element 8</li>
+    <li>Element 9</li>
+    <li>Element 10</li>
+    <li>Element 11</li>
+    <li>Element 12</li>
+    <li>Element 13</li>
+    <li>Element 14</li>
+    <li>Element 15</li>
+</ul>
 	<script>
 		var ul = document.querySelector('ul');
 var nodes = document.querySelectorAll('li');
@@ -49,34 +78,4 @@ function select(el) {
 }
 
 	</script>
-</head>
-<body>
-<style>
-	ul {
-    height: 120px;
-    overflow-y: scroll;
-    font-size: 18px;
-}
-li.selected {
-    background: #ccc;
-}
-	</style>
-	<ul>
-    <li class="selected">Element 1</li>
-    <li>Element 2</li>
-    <li>Element 3</li>
-    <li>Element 4</li>
-    <li>Element 5</li>
-    <li>Element 6</li>
-    <li>Element 7</li>
-    <li>Element 8</li>
-    <li>Element 9</li>
-    <li>Element 10</li>
-    <li>Element 11</li>
-    <li>Element 12</li>
-    <li>Element 13</li>
-    <li>Element 14</li>
-    <li>Element 15</li>
-</ul>
-	
  </html>
