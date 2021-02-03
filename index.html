@@ -43,7 +43,11 @@ li.selected {
 var nodes = document.querySelectorAll('li');
 var selected = 0;
 
-
+[].forEach.call(nodes, function(el) {
+    el.addEventListener(e.keyCode === 172, function() {
+        select(this);
+    })
+});
 
 document.addEventListener('keydown', function(e) {
     if (e.keyCode === 38) { // up
