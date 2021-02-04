@@ -13,71 +13,27 @@
 <body>
 <style>
 	html,body{width:100%;height:100%;margin:0;padding:0;}
-	ul {
-    height: 120px;
-    overflow-y: scroll;
-    font-size: 18px;
-}
-li.selected {
-    background: #ccc;
+ground: #ccc;
 }
 	</style>
-	<ul>
-    <li class="selected">Element 1</li>
-    <li>Element 2</li>
-    <li>Element 3</li>
-    <li>Element 4</li>
-    <li>Element 5</li>
-    <li>Element 6</li>
-    <li>Element 7</li>
-    <li>Element 8</li>
-    <li>Element 9</li>
-    <li>Element 10</li>
-    <li>Element 11</li>
-    <li>Element 12</li>
-    <li>Element 13</li>
-    <li>Element 14</li>
-    <li>Element 15</li>
-</ul>
-	<script>
-		var ul = document.querySelector('ul');
-var nodes = document.querySelectorAll('li');
-var selected = 0;
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaffhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
+fhdfhdffffffffffffffffffffffffffffffffffffffffhdhdfjhgfffffffffffffjfgjdfkghitydysdrayhadfhdfhdaf
 
-[].forEach.call(nodes, function(el) {
-    el.addEventListener(e.keyCode === 172, function() {
-        select(this);
-    })
-});
 
-document.addEventListener('keydown', function(e) {
-    if (e.keyCode === 38) { // up
-        select(nodes[selected - 1]);
-    }
-    if (e.keyCode === 40) { // down
-        select(nodes[selected + 1]);
-    }
-    e.preventDefault();
-});
-
-function select(el) {
-    var s = [].indexOf.call(nodes, el);
-    if (s === -1) return;
-    
-    selected = s;
-    
-    var elHeight = $(el).height();
-    var scrollTop = $(ul).scrollTop();
-    var viewport = scrollTop + $(ul).height();
-    var elOffset = elHeight * selected;
-    
-    console.log('select', selected, ' viewport', viewport, ' elOffset', elOffset);
-    if (elOffset < scrollTop || (elOffset + elHeight) > viewport)
-        $(ul).scrollTop(elOffset);
-    
-    document.querySelector('li.selected').classList.remove('selected');
-    el.classList.add('selected');
-}
-
-	</script>
+</body>
  </html>
